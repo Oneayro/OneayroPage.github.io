@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  background-color: #e3eeea;
+  background-image: url(images/background11.png);
+  background-size: 100%;
+}
+
+hr {
+  height: 2px;         
+  background-color: rgba(95, 158, 160, 0.25); 
+  border: none;             
+}
+
+dl {
+  background-color: rgba(255, 255, 255, 0.477);
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(49, 85, 86, 0.945);
+  display: flex;
+  gap:10px;
+  align-items: center;
+  padding: 10px 30px;
+  width: 100px;
+  height: 40px;
+  margin: 60px auto;
+}
+
+dl img {
+  width: 40px;   
+  height: 40px;  
+  object-fit: contain; 
+}
+
+
+
+#box1,#box2, #box3 {
+  border: 1px solid #e1e5e8;
+  border-radius: 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-left  { display:flex; 
+              justify-content:flex-start; 
+              align-items:flex-start; 
+}
+.flex-right { display:flex; 
+              justify-content:flex-end;   
+              align-items:flex-end;   
+}
+
+
+.container { 
+  display:flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center; 
+  gap:13px; 
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+#box2 {
+  flex: 0 0 200px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  min-height: 550px;
+  max-width: 200px;
+  background: rgba(249, 254, 254, 0.72);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+#box1 {
+  flex:1;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  min-height: 550px;
+  max-width: none;
+  background: rgba(249, 254, 254, 0.72);
+}
+
+#box3 {
+  flex: 0 0 200px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  min-height: 550px;
+  max-width: 200px;
+  background: rgba(249, 254, 254, 0.72);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+div, pre {
+    align-self: stretch;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(95, 146, 140);
+
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-style: dotted;
+  border-width: 1px;
+  overflow: auto;
+  text-align: center;
+  color: rgb(95, 146, 140); 
+  display:inline-block;
+  padding: 8px 12px;
+  width: 400px;                       
+  border-radius: 6px; 
+  font-size: 22px;
+  margin-top: 180px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #faf9f7;
+  margin-top: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+
+header nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 1px;
+  border: 2px solid rgba(57, 71, 71, 0.227);
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  min-height: 1px;
+  background: #f4f7f8;
+  font-size: large;
+  margin-bottom: 1px;
+  border: 2px solid rgb(51, 86, 87);
+  border-radius: 100px;
+}
+
+a {
+  color: rgb(146, 119, 155);
+  text-decoration: none;
+}
+nav a:hover{
+  color: rgb(72, 125, 125);
+  border-color: #b9c3c01f;
+  background-color: rgba(255, 255, 255, 0.574);
+}
+
+dl:hover {
+  color: rgb(72, 125, 125);
+  border-color: #b9c3c09b;
+  background-color: rgba(255, 255, 255, 0.574);
+}
+
+
+dt, dd {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+  font-size: small;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.467);
+}
+
+#box1 > .panel { display: none; }
+#box1 > .panel:target { display: block; }
+
+#heart {
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(59, 89, 64, 0.5);
+
+}
+
+
+.brushes-container {
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;  
+  gap: 10px;              
+  margin: 1px 0;
+}
+
+.brush-box {
+  width: 200px;            
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.456);       
+  border-radius: 10px;
+  padding: 10px;
+  border-style:solid;
+  border-color: rgb(62, 97, 98);
+  border-width: 2px;
+}
+
+.brush-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;    
+}

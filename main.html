@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artiste-Acceuil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1 id="page-title" style="color: cadetblue;" class="flex-center">WELCOME</h1>
+        <nav>
+            <a href="#home">Welcome</a>
+            <a href="#brushes">Brushes</a>
+            <a href="#commissions">Commissions</a>
+            <a href="#tutorials">Tutorials</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <script>
+        const title = document.getElementById("page-title");
+        const links = document.querySelectorAll("nav a");
+
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+            const section = link.textContent; // récupère le texte du lien
+            title.textContent = section.toUpperCase(); // change le header
+            });
+        });
+    </script>
+
+
+    <div class="container">
+        <div id="box2", class="flex-left">
+                <div id="socials", class="panel">
+
+                <h6>Links</h6>
+                    
+                <a target="_blank" href="https://www.youtube.com/@oneayro">
+                <dl>
+                    <dt></dt><img src="images/YT.webp"></dt>
+                    <dd>Oneayro</dd>
+                </dl>
+                </a>
+
+                <div id="heart">❤</div>
+
+                <a target="_blank" href="https://www.tiktok.com/@oneayro">
+                <dl >
+                    <dt><img src="images/tiktok.webp"></dt>
+                    <dd>Oneayro</dd>                 
+                </dl>
+                </a>
+
+                <div id="heart">❤</div>
+                
+                <a target="_blank" href="https://www.instagram.com/oneayro/">
+                <dl>
+                    <dt></dt><img SRC="images/insta.webp"></dt>
+                    <dd>Oneayro</dd>   
+                </dl>
+                </a>
+
+                </div>
+        </div>
+
+        <div id="box1", class="flex-center">
+            <div id="home", class="panel">
+            <p style="margin-bottom: 20px;">
+            Hi, I’m Oy! 
+            Welcome to my website. Here you’ll find all my social media links, the brushes I use, commission info, tutorials on YouTube, and a gallery connected to my Instagram.
+            Feel free to explore and enjoy!
+            </p>
+            </div>
+
+
+            <div id="brushes", class="panel">
+
+                <a target="_blank" href="https://onayro.gumroad.com/">
+                <dl style="width: 200px; height: 100px;">
+                    <dt><img src="https://public-files.gumroad.com/fam77k9we8iu6lkpozbmt1xniodn" style="height: 100px; width: 100px;"></dt>
+                    <dd>Gumroad brushes</dd>
+                </dl>
+                </a>
+
+                <div style="text-align: center;">Main brushes on Procreate</div>
+                    <div class="brushes-container">
+                    <div class="brush-box">
+                        <img src="images/brush1.png" alt="Brush set 1">
+                    </div>
+                    <div class="brush-box">
+                        <img src="images/brush3.png" alt="Brush set 2">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="commissions", class="panel", style="margin-top: 100px;">
+                    <div style="text-align: center;">Starting from $10 dm me on instagram for more infos</div>
+                    <div class="brushes-container">
+                    <div class="brush-box">
+                        <img src="images/coms3.png" alt="Brush set 1">
+                    </div>
+                    <div class="brush-box">
+                        <img src="images/coms1.png" alt="Brush set 2">
+                    </div>
+                    <div class="brush-box">
+                        <img src="images/coms3.png" alt="Brush set 3">
+                    </div>
+                </div>
+            </div>
+
+            <div id="tutorials", class="panel", style="text-align: center; align-items: center; align-content: center; justify-content: center;">
+                <div style="font-size: 15px;">Watch more on youtube</div>
+
+                <div class="yt-wrap">
+                <iframe 
+                    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLURB4VHELFXS233NxVUetWHUZ_HVfSoBD&rel=0&modestbranding=1" 
+                    title="Ma playlist YouTube"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    style="height: 300px; width: 500px;">
+                </iframe>
+                </div>
+            </div>
+
+
+            <div id="gallery", class="panel", style="text-align: center; align-items: center; align-content: center; justify-content: center;">
+                <br>
+                <div style="text-align: center;">Some of my instagram posts</div>
+                <br>
+                    <div>
+                    <div  style="display: flex; gap: 10px; flex-wrap: wrap; margin-left: 130px;">
+                        <img src="images/i1.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i2.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i3.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i4.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i5.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i6.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i7.jpg" style="height: 270px; width: 190px;">
+                        <img src="images/i8.jpg" style="height: 270px; width: 190px;">
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <div id="box3" class="flex-right" style="text-align: center; align-items: center; align-content: center; justify-content: center;">
+            <a target="_blank" href="https://www.paypal.me/oneayroYT?locale.x=fr_CA"> 
+                <dl style="width: 120px; height: 50px;">
+                    <dt><img src="images/paylogo.png" style="height: 50px; width: 50px;"></dt>
+                    <dd>Payment on Paypal only !!</dd>
+                </dl>
+            </a>
+        </div>
+    </div>
+
+    <footer></footer>
+
+
+</body>
+</html>
